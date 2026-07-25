@@ -24,11 +24,11 @@ def load_data(uploaded_file=None):
             return pd.read_csv("t.csv")
         except Exception:
             return None
-    if uploaded_file.name.endswith(".csv"):
-        return pd.read_csv(uploaded_file)
-    if uploaded_file.name.endswith((".xls", ".xlsx")):
-        return pd.read_excel(uploaded_file)
-    return None
+    # if uploaded_file.name.endswith(".csv"):
+    #     return pd.read_csv(uploaded_file)
+    # if uploaded_file.name.endswith((".xls", ".xlsx")):
+    #     return pd.read_excel(uploaded_file)
+    # return None
 
 def style_fig(fig, title="", height=450):
     fig.update_layout(
